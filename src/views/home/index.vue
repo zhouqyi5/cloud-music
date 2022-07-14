@@ -1,7 +1,4 @@
 <template>
-  <div>
-    <AppHeaderNav />
-  </div>
   <div class="home-carousel-music container">
     <HomeCarousel />
     <div>
@@ -17,7 +14,6 @@
   </div>
 </template>
 <script>
-import AppHeaderNav from '@/components/app-header-nav'
 import HomeCarousel from './components/home-carousel'
 import MusicPlayList from './components/music-play-list'
 import HomeSongList from './components/home-song-list'
@@ -26,7 +22,7 @@ import HomePlayList from './components/home-play-list'
 import { homeDate } from '@/api/home'
 export default {
   name: 'Home',
-  components: { AppHeaderNav, HomeCarousel, MusicPlayList, HomeSongList, HomeSingerList, HomePlayList },
+  components: { HomeCarousel, MusicPlayList, HomeSongList, HomeSingerList, HomePlayList },
   setup() {
     homeDate().then((data) => {
       console.log(data)

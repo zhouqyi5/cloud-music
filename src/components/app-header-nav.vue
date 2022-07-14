@@ -8,9 +8,15 @@
         <li class="home">
           <RouterLink to="/">首页</RouterLink>
         </li>
-        <li><a href="#">排行榜</a></li>
-        <li><a href="#">歌手</a></li>
-        <li><a href="#">歌单</a></li>
+        <li>
+          <a href="#"><RouterLink to="/ranklist">排行榜</RouterLink></a>
+        </li>
+        <li>
+          <a href="#"><RouterLink to="/singer">歌手</RouterLink></a>
+        </li>
+        <li>
+          <a href="#"><RouterLink to="/songlist">歌单</RouterLink></a>
+        </li>
       </ul>
 
       <FnSearch />

@@ -1,13 +1,21 @@
 <template>
-  <div>
-    <AppHeaderNav />
+  <div class="rank-list container">
+    <RankListLeft />
+    <RankListRight />
   </div>
 </template>
 <script>
-import AppHeaderNav from '@/components/app-header-nav'
+import RankListLeft from './components/rank-list-left'
+import RankListRight from './components/rank-list-right'
 export default {
   name: 'RankList',
-  components: { AppHeaderNav }
+  components: { RankListLeft, RankListRight }
 }
 </script>
-<style scoped lang="less"></style>
+<style scoped lang="less">
+.rank-list {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+</style>
