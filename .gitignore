@@ -1,7 +1,9 @@
 .DS_Store
 node_modules
 /dist
-
+src/assets/fonts/
+src/api/
+src/utils/
 
 # local env files
 .env.local

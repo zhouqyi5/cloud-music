@@ -1,9 +1,16 @@
 <template>
-  <div class="container">SongList 歌单列表</div>
+  <div class="container">
+    歌单
+    <SongListFilter />
+    <SongListItem />
+  </div>
 </template>
 <script>
+import SongListFilter from './components/song-list-filter'
+import SongListItem from './components/song-list-item'
 export default {
-  name: 'SongList'
+  name: 'SongList',
+  components: { SongListFilter, SongListItem }
 }
 </script>
 <style scoped lang="less"></style>

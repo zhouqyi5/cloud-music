@@ -9,10 +9,7 @@
         <ul>
           <li class="song-list-item" v-for="item in 6" :key="item">
             <div class="song-list-item-img">
-              <img
-                src="../../../assets/images/10000.jpg"
-                alt=""
-              />
+              <img src="../../../assets/images/10000.jpg" alt="" />
             </div>
             <div class="song-list-item-text">
               <span class="song-list-item-text-name ellipsis-2">每日最新单曲</span>
@@ -34,16 +31,17 @@ export default {
   margin-top: 20px;
   .song-list-item {
     float: left;
-    width: 200px;
-    height: 300px;
+    width: 180px;
+    height: 260px;
     /* background-color: pink; */
-    margin-right: 8px;
+    margin-top: 10px;
+    margin-right: 32px;
     &:last-child {
       margin-right: 0;
     }
     &-img {
       width: 100%;
-      height: 200px;
+      height: 180px;
     }
     &-text {
       width: 100%;
@@ -54,7 +52,7 @@ export default {
       }
       .song-list-iten-text-icon {
         display: inline-block;
-        margin-top: 10px;
+        margin-top: 8px;
         font-size: 14px;
         color: #969696;
       }
